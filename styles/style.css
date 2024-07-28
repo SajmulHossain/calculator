@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+main {
+    background-color: #4c4646;
+    padding: 10px 8px;
+    border-radius: 15px;
+}
+
+.calculator-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.calculator-main {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(6, 60px);
+    justify-content: center;
+    gap: 6px;
+}
+
+#display {
+    grid-column: 1/-1;
+    text-align: right;
+    padding: 0 10px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+input[value='C'] {
+    grid-column: 1/2;
+}
+
+input[value='4'] {
+    grid-column: 1/2;
+}
+
+input[value='1'] {
+    grid-column: 1/2;
+}
+
+input[value='='] {
+    grid-column: 4/5;
+    grid-row: 6/7;
+}
+
+input[value='+'] {
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+
+input[value='*'] {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+input[value='-'] {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+input[type='button'] {
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+}
