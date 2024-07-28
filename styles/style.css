@@ -5,12 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    cursor: default34;
+    cursor: default;
 }
 
 *::selection {
     background-color: transparent;
-    /* color: transparent; */
 }
 
 body {
@@ -33,6 +32,16 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px;
+}
+
+.calculator-header h3 {
+    font-size: 18px;
+    letter-spacing: .2px;
+}
+
+.calculator-header p {
+    font-size: 11px;
+    font-weight: 500;
 }
 
 .button-container {
@@ -93,4 +102,5 @@ input[type='button'] {
     font-weight: bold;
     border: none;
     background-color: #c1ae91;
+    cursor: pointer;
 }
